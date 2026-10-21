@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T09:48:51+00:00",
+  "title": "Design System: Scott J. D'Antonio Inc.",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Wall Paper",
+        "canonical": "oklch(97.3% 0.007 269)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232428",
+          "#3e4044",
+          "#5c5d62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c2c4c9",
+          "#eceef3"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Tint",
+        "canonical": "oklch(94.1% 0.014 258)",
+        "tonalRamp": [
+          "#080b11",
+          "#20242b",
+          "#3b4047",
+          "#595e66",
+          "#787e86",
+          "#999fa7",
+          "#bfc5cd",
+          "#e9eff8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(28.0% 0.053 252)",
+        "tonalRamp": [
+          "#000b20",
+          "#0f253d",
+          "#2b415b",
+          "#48607b",
+          "#67809c",
+          "#87a1bf",
+          "#acc7e6",
+          "#d6f2ff"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "canonical": "oklch(34.3% 0.038 252)",
+        "tonalRamp": [
+          "#010c1b",
+          "#162536",
+          "#314154",
+          "#4e5f73",
+          "#6d7f94",
+          "#8ea1b6",
+          "#b3c6dd",
+          "#ddf1ff"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "oklch(45.5% 0.032 252)",
+        "tonalRamp": [
+          "#030c18",
+          "#192533",
+          "#344150",
+          "#515f6f",
+          "#707f90",
+          "#91a0b2",
+          "#b6c6d9",
+          "#e0f0ff"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Slate Navy",
+        "canonical": "oklch(36.7% 0.063 250)",
+        "tonalRamp": [
+          "#000a24",
+          "#072541",
+          "#244260",
+          "#416080",
+          "#6080a2",
+          "#81a2c5",
+          "#a6c8ec",
+          "#cff3ff"
+        ]
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "oklch(28.0% 0.053 252)",
+        "tonalRamp": [
+          "#000b20",
+          "#0f253d",
+          "#2b415b",
+          "#48607b",
+          "#67809c",
+          "#87a1bf",
+          "#acc7e6",
+          "#d6f2ff"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On-Dark",
+        "canonical": "oklch(97.5% 0.006 255)",
+        "tonalRamp": [
+          "#090b0e",
+          "#222427",
+          "#3e4043",
+          "#5b5e61",
+          "#7b7d81",
+          "#9c9fa2",
+          "#c1c4c8",
+          "#eceff3"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On-Dark Soft",
+        "canonical": "oklch(86.8% 0.023 252)",
+        "tonalRamp": [
+          "#050c15",
+          "#1c252f",
+          "#37414c",
+          "#545f6b",
+          "#747e8b",
+          "#94a0ad",
+          "#bac5d3",
+          "#e4f0fe"
+        ]
+      },
+      "brass": {
+        "role": "primary",
+        "displayName": "Hardware Brass",
+        "canonical": "oklch(76.9% 0.139 79)",
+        "tonalRamp": [
+          "#260000",
+          "#451100",
+          "#653100",
+          "#865000",
+          "#a97100",
+          "#cc921b",
+          "#f4b84e",
+          "#ffe58e"
+        ]
+      },
+      "brass-2": {
+        "role": "primary",
+        "displayName": "Polished Brass",
+        "canonical": "oklch(81.9% 0.126 81)",
+        "tonalRamp": [
+          "#230000",
+          "#411600",
+          "#603400",
+          "#815300",
+          "#a37400",
+          "#c69532",
+          "#edbb5c",
+          "#ffe78e"
+        ]
+      },
+      "brass-ink": {
+        "role": "primary",
+        "displayName": "Brass Ink",
+        "canonical": "oklch(49.3% 0.104 75)",
+        "tonalRamp": [
+          "#210000",
+          "#3f1700",
+          "#5f3500",
+          "#7f5300",
+          "#a1732c",
+          "#c49550",
+          "#ecbb75",
+          "#ffe59f"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Navy",
+        "canonical": "oklch(36.7% 0.063 250)",
+        "tonalRamp": [
+          "#000a24",
+          "#072541",
+          "#244260",
+          "#416080",
+          "#6080a2",
+          "#81a2c5",
+          "#a6c8ec",
+          "#cff3ff"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "oklch(50.1% 0.178 29)",
+        "tonalRamp": [
+          "#3a0000",
+          "#600000",
+          "#860000",
+          "#ac1d17",
+          "#d2463a",
+          "#f96a5b",
+          "#ff927f",
+          "#ffd0c0"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only, white, max 11ch; bounces in letter by letter."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One per band."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Photo card titles, trust claims, step titles, the Facebook row."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One sentence under a headline, max 40ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and inputs; never under 16px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels and legends in Cal Sans."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 10px 28px rgba(8,24,46,.3)",
+        "purpose": "Floating message circle only."
+      }
+    ],
+    "textures": [
+      {
+        "name": "deep-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Deep Navy bands and footer only; about 4% white or fainter."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "hero-phone",
+        "value": "linear-gradient(180deg,rgba(20,42,66,.9) 0%,rgba(20,42,66,.84) 55%,rgba(20,42,66,.74) 100%)"
+      },
+      {
+        "name": "hero-desktop",
+        "value": "linear-gradient(90deg,rgba(20,42,66,.92) 0%,rgba(20,42,66,.86) 55%,rgba(20,42,66,.5) 100%)"
+      },
+      {
+        "name": "photo-card",
+        "value": "linear-gradient(180deg,rgba(20,42,66,0) 45%,rgba(20,42,66,.86) 100%)"
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), translateX(50px) to 0, 20ms stagger",
+        "purpose": "Hero H1 only; skipped without JS and under reduced motion."
+      },
+      {
+        "name": "rise",
+        "value": "opacity and translateY(12px), .4s ease-out",
+        "purpose": "Elements that start below the first screen; visible at rest."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Floating message circle slide-up."
+      },
+      {
+        "name": "state",
+        "value": ".2s (buttons, arrows), .15s (fields, chips)",
+        "purpose": "Colour and border state changes."
+      },
+      {
+        "name": "press",
+        "value": "scale(.98), .12s",
+        "purpose": "Button press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "380px (max)"
+      },
+      {
+        "name": "desktop",
+        "value": "760px"
+      },
+      {
+        "name": "wide",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Brass pill for the one main action per view (quote, send, open Messenger).",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M12 3C7 3 3 6.7 3 11.3c0 2.6 1.3 4.9 3.3 6.4V21l3-1.7c.9.3 1.8.4 2.7.4 5 0 9-3.7 9-8.4S17 3 12 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.1\" stroke-linejoin=\"round\"/><path d=\"M7.5 13.2l3-3.2 2.2 2.1 3.8-2.1-3 3.2-2.2-2.1z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg>Send this to Scott</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:18px;line-height:1;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s;background:#e3a83b;color:#142a42;border-color:#e3a83b}.ds-btn-primary svg{flex:none}.ds-btn-primary:hover{background:#edbb5c;border-color:#edbb5c}.ds-btn-primary:active{transform:scale(.98)}.ds-btn-primary:focus-visible{outline:3px solid #23415f;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined secondary pill, on dark grounds (the hero) only.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn-ghost\" href=\"#\">See me on Facebook</a></div>",
+      "css": ".ds-dark{background:#142a42;padding:24px}.ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:18px;line-height:1;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s;background:transparent;color:#f4f7fb;border-color:rgba(244,247,251,.7)}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:active{transform:scale(.98)}.ds-btn-ghost:focus-visible{outline:3px solid #e3a83b;outline-offset:3px}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Ink-outlined pill for a secondary action on light grounds.",
+      "html": "<button class=\"ds-btn-line\" type=\"button\">Copy again</button>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:18px;line-height:1;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s;background:transparent;color:#142a42;border-color:#142a42}.ds-btn-line:hover{background:rgba(20,42,66,.06)}.ds-btn-line:active{transform:scale(.98)}.ds-btn-line:focus-visible{outline:3px solid #23415f;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Tinted, borderless field with a Cal Sans label; navy border on hover and focus, red when invalid.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Your name</label><input id=\"ds-n\" class=\"ds-input\" type=\"text\" placeholder=\"First name is fine\"></div>",
+      "css": ".ds-field{display:grid;gap:8px;background:#fff;padding:24px;border-radius:24px}.ds-field label{font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:17px;line-height:1.2;color:#142a42}.ds-input{width:100%;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;line-height:1.4;color:#142a42;background:#e6ecf5;border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;transition:border-color .15s}.ds-input::placeholder{color:#55626f}.ds-input:hover,.ds-input:focus{outline:none;border-color:#23415f}"
+    },
+    {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio choices as tinted pills; selected fills Ink.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"ds-k\" id=\"ds-k1\" checked><label for=\"ds-k1\">Inside</label><input type=\"radio\" name=\"ds-k\" id=\"ds-k2\"><label for=\"ds-k2\">Outside</label><input type=\"radio\" name=\"ds-k\" id=\"ds-k3\"><label for=\"ds-k3\">Both</label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#e6ecf5;border:2px solid transparent;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;line-height:1;color:#142a42;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover{border-color:#23415f}.ds-chips input:checked+label{background:#142a42;color:#fff}.ds-chips input:checked+label:hover{outline:2px solid #23415f;outline-offset:2px}.ds-chips input:focus-visible+label{outline:3px solid #23415f;outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "description": "Paper strip: wordmark left, Messenger link right. No menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>Scott J. D'Antonio</b><span>Inc. · Marlton, NJ</span></a><a class=\"ds-msg\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M12 3C7 3 3 6.7 3 11.3c0 2.6 1.3 4.9 3.3 6.4V21l3-1.7c.9.3 1.8.4 2.7.4 5 0 9-3.7 9-8.4S17 3 12 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.1\" stroke-linejoin=\"round\"/><path d=\"M7.5 13.2l3-3.2 2.2 2.1 3.8-2.1-3 3.2-2.2-2.1z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg>Message me</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:#f4f6fb;color:#142a42}.ds-brand{display:flex;flex-direction:column;text-decoration:none;color:inherit;line-height:1}.ds-brand b{font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:20px;white-space:nowrap}.ds-brand span{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#4a5868;margin-top:6px}.ds-msg{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:17px;text-decoration:none;color:inherit}.ds-msg svg{color:#835700}.ds-msg:hover{color:#835700}.ds-msg:focus-visible{outline:3px solid #23415f;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Photo Card",
+      "kind": "card",
+      "refersTo": "photo-card",
+      "description": "4:5 photo link under a bottom navy gradient; only the arrow circle reacts.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-ph\"></span><span class=\"ds-t\">Interior improvements<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></span></a>",
+      "css": ".ds-card{position:relative;display:block;width:280px;aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:#e6ecf5;color:#fff;text-decoration:none}.ds-ph{position:absolute;inset:0;background:linear-gradient(160deg,#c9d5e3,#87a1bf)}.ds-card::after{content:\"\";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,42,66,0) 45%,rgba(20,42,66,.86) 100%)}.ds-t{position:absolute;z-index:1;left:20px;right:20px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:24px;line-height:1.1}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.18);color:#fff;transition:background-color .2s,color .2s}.ds-card:hover .ds-arrow,.ds-card:focus-visible .ds-arrow{background:#e3a83b;color:#142a42}.ds-card:focus-visible{outline:none}.ds-card:focus-visible .ds-arrow{outline:3px solid #e3a83b;outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Steps",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Brass numeral circles on a deep band with faint diagonal lines.",
+      "html": "<div class=\"ds-deep\"><ol class=\"ds-steps\"><li><div><b>Tell me what you'd like changed.</b><span>A few words are plenty.</span></div></li><li><div><b>I come and see it.</b><span>We look at it together.</span></div></li></ol></div>",
+      "css": ".ds-deep{background-color:#142a42;background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);color:#c9d5e3;padding:32px 20px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;line-height:1.7}.ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e3a83b;color:#142a42;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1}.ds-steps b{display:block;font-family:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;font-weight:400;font-size:21px;line-height:1.2;color:#f4f7fb;margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    },
+    {
+      "name": "Floating Message Circle",
+      "kind": "custom",
+      "refersTo": "float-message",
+      "description": "The one floating control: a 60px brass circle that opens Messenger.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Message Scott\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M12 3C7 3 3 6.7 3 11.3c0 2.6 1.3 4.9 3.3 6.4V21l3-1.7c.9.3 1.8.4 2.7.4 5 0 9-3.7 9-8.4S17 3 12 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.1\" stroke-linejoin=\"round\"/><path d=\"M7.5 13.2l3-3.2 2.2 2.1 3.8-2.1-3 3.2-2.2-2.1z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#e3a83b;color:#142a42;box-shadow:0 10px 28px rgba(8,24,46,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid #23415f;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Freshly Finished Room",
+    "overview": "The site is a house after Scott has been through it: clean off-white walls, painted navy trim, and one run of warm brass hardware that catches the eye. Order is how it earns trust. Full-bleed bands alternate light and dark so each new part of the page is obvious on a phone, the shapes are soft and borderless, and nothing competes with the one brass accent. It's a single-page persuade surface for a local trade, built phone-first for Facebook's in-app browser, and it follows Ellie's house calm band style.\n\nDensity is low and the pace is even: one idea per band, generous band padding, short headings set in a single display face. Motion is limited to three things: the hero headline bouncing in letter by letter, one 12px fade-up for content below the first screen, and the floating message circle sliding in. Every one of them is skipped under reduced motion and without JS, and nothing is ever left hidden at rest.\n\nPhotography is currently AI-generated example imagery (gpt-image-1, 2026-10-21) under navy overlays and gradients. It shows the kind of work, never Scott's own jobs, and it should be swapped for real job photos when they exist, using the same overlay treatments.\n\nThe small eyebrow pills above the hero headline and the quote heading come from Ellie's house calm band style as her own exception. They're governed by that house file, not by this system, so they aren't specified here as a component.",
+    "keyCharacteristics": [
+      "Paper, two navies, one brass accent; the ground is never black.",
+      "Full-bleed bands in a paper / navy / deep / paper / navy rhythm, with the deep bands carrying a faint diagonal line texture.",
+      "One display webfont (Cal Sans, weight 400) for headings, labels and buttons; the system stack for running text at 16/1.7.",
+      "Soft, borderless forms: 24px cards, full pills, 10px tinted fields.",
+      "Hover only where there's a real pointer; on photo and Facebook rows, only the arrow circle changes."
+    ],
+    "rules": [
+      {
+        "name": "The Brass Is Hardware Rule",
+        "body": "Brass is a fill, never text on a light ground. Text on brass is Ink; brass as text on light is Brass Ink. If brass is the only thing marking an element, check it against the ground before shipping.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Phrase Rule",
+        "body": "On dark grounds (hero, navy, deep), a heading may end with its last phrase in brass (\"refreshed.\", \"like mine.\", \"works.\"). Headings on paper stay all Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Faint Lines Rule",
+        "body": "The deep-band texture is `repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)` and appears only on Deep Navy grounds. Keep it at about 4% white or fainter so it never reads as lines through text.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Rule",
+        "body": "Cal Sans is only ever set at 400. Emphasis comes from size and the brass accent phrase, not weight. Inside body text, `<b>` is the system face at 600.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Faces Rule",
+        "body": "One display webfont, one system body stack. Never add a second body or display family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Bands Rule",
+        "body": "Cards, buttons and fields have no shadow at rest or on hover. Separation comes from colour, band changes and tinted fills. Hard offset shadows don't belong here.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Navy Veil Rule",
+        "body": "Photos sit under Deep Navy. The hero gets a top-to-bottom gradient on phones (about .90 to .74) and a left-to-right one on desktop (about .92 to .50), so white text always sits on the dark side. Photo cards get a bottom gradient from transparent at 45% to about .86. Check that white text is 4.5:1 or better on the actual pixels.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use brass only as a fill, with Ink text on it; use Brass Ink when brass has to be text on light.",
+      "**Do** alternate full-bleed light and dark bands, and only put the diagonal texture on Deep Navy.",
+      "**Do** keep every interactive target 44px or larger and every input at 16px or larger.",
+      "**Do** put hover styles inside `@media (hover:hover)` so taps don't leave them stuck on.",
+      "**Do** outline form controls on hover and focus with Focus Navy on light grounds and brass on dark grounds.",
+      "**Do** keep the fade-up at 12px over 400ms, and only on elements that start below the first screen; everything stays visible at rest, without JS and under reduced motion.",
+      "**Do** put every photo under a Deep Navy overlay or gradient and check white text at 4.5:1 or better."
+    ],
+    "donts": [
+      "**Don't** set brass text, or white text, on light grounds, or white text on brass.",
+      "**Don't** add shadows to cards, buttons or fields; the Float shadow belongs to the floating circle only.",
+      "**Don't** set Cal Sans in any weight but 400, or add a second display or body family.",
+      "**Don't** give the letter bounce-in to any heading other than the hero H1.",
+      "**Don't** let more than two buttons share a row, or add a second floating control or a bottom bar.",
+      "**Don't** present the example images as Scott's own jobs."
+    ]
+  }
+}
