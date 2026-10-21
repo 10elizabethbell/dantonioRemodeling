@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scott J. D'Antonio Inc. · Light &amp; cosmetic remodeling · Marlton, NJ</title>
+<meta name="description" content="Light and cosmetic remodeling, inside and out, from Scott J. D'Antonio Inc. in Marlton, NJ. Serving Cherry Hill, Moorestown, Mt. Laurel and Voorhees since 1997.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scott J. D'Antonio Inc. · Your South Jersey home, refreshed.">
+<meta property="og:description" content="Light and cosmetic remodeling, inside and out. Marlton, NJ, since 1997.">
+<meta property="og:url" content="https://10elizabethbell.github.io/dantonioRemodeling/">
+<meta property="og:image" content="https://10elizabethbell.github.io/dantonioRemodeling/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<link rel="preload" as="image" href="img/hero-tall.webp" media="(max-width:759px)">
+<link rel="preload" as="image" href="img/hero-wide.webp" media="(min-width:760px)">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  /* off-white paper, two slate navies, one warm brass accent (no logo on hand; see HANDOFF) */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#142a42;         /* headings, text on brass */
+  --body:#2a3a4c;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#23415f;        /* services band, close */
+  --deep:#142a42;        /* hero overlay, how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d5e3;
+  --brass:#e3a83b;       /* fills only; text on it is --ink */
+  --brass-2:#edbb5c;
+  --brass-ink:#835700;   /* brass as text on light (7.6:1 on paper) */
+  --line:rgba(20,42,66,.12);
+  --focus:#23415f;       /* form hover/focus outline, distinct from the brass fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--brass);color:var(--ink)}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--brass)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
+
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--brass-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--brass)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:40ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(20,42,66,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brass)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.brand b{font:400 20px/1 var(--display);letter-spacing:.005em;white-space:nowrap}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:6px}
+.msg{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.msg svg{width:20px;height:20px;flex:none;color:var(--brass-ink)}
+
+/* ---------- Hero: generated example kitchen under a deep-navy overlay ---------- */
+.hero{padding:0;position:relative;background-color:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 60%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,42,66,.9) 0%,rgba(20,42,66,.84) 55%,rgba(20,42,66,.74) 100%)}
+.hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:64px;padding-bottom:80px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:30ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+
+/* ---------- What I do: two photo cards ---------- */
+.cards{display:grid;gap:16px;margin-top:32px}
+.card{position:relative;display:block;border-radius:var(--r-card);overflow:hidden;aspect-ratio:4/5;background:var(--field);text-decoration:none;color:#fff}
+.card img{width:100%;height:100%;object-fit:cover}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,42,66,0) 45%,rgba(20,42,66,.86) 100%)}
+.card .t{position:absolute;z-index:1;left:20px;right:20px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font:400 clamp(22px,6vw,28px)/1.1 var(--display)}
+.card:hover,.card:focus-visible{outline:none;box-shadow:none}
+.card .arrow{background:rgba(255,255,255,.18);color:#fff}
+.card:focus-visible .arrow{background:var(--brass);color:var(--ink);outline:3px solid var(--brass);outline-offset:3px}
+.note{margin-top:20px;font-size:15px;color:var(--soft);max-width:52ch}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(20,42,66,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+
+/* ---------- Trust ---------- */
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--on-dark)}
+.claims li+li{border-top:1px solid rgba(255,255,255,.14)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--brass)}
+.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--brass);color:var(--ink);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display);max-width:460px}
+.fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none}
+.fb .arrow{background:rgba(20,42,66,.12)}
+.fb:focus-visible .arrow{background:var(--ink);color:var(--brass);outline:3px solid var(--on-dark);outline-offset:3px}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--brass);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+fieldset.field legend{margin-bottom:8px}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#55626f}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.field.bad input[type=text],.field.bad textarea{border-color:var(--error)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+form .btn-primary{width:100%}
+form .btn:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.after{font-size:15px;color:var(--soft)}
+/* After submit: the message, copied, and the way into Messenger */
+.sent{display:grid;gap:14px;padding:20px;border-radius:18px;background:var(--paper)}
+.sent p{color:var(--ink);font-weight:600}
+.sent textarea{min-height:110px;background:var(--card);font-size:16px}
+.sent .row{display:grid;gap:10px}
+@media (max-width:380px){.chips label{padding:0 14px}}
+
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.area{margin-top:22px;max-width:44ch}
+.area b{color:var(--on-dark);font-weight:600}
+.bigmsg{display:inline-flex;align-items:center;gap:14px;margin-top:28px;font:400 clamp(28px,8vw,44px)/1.05 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px}
+.bigmsg svg{width:.85em;height:.85em;flex:none;color:var(--brass)}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(244,247,251,.4)}
+
+/* ---------- Floating message circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--brass);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,46,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+html:not(.js) .float{display:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:24px}
+  .msg{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:112px;padding-bottom:128px}
+  .hero picture img{object-position:50% 55%}
+  .hero::before{background:linear-gradient(90deg,rgba(20,42,66,.92) 0%,rgba(20,42,66,.86) 55%,rgba(20,42,66,.5) 100%)}
+  .promise{max-width:40ch}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .cards{grid-template-columns:1fr 1fr;gap:24px;max-width:880px}
+  .sent .row{grid-auto-flow:column;justify-content:start}
+}
+@media (min-width:1024px){
+  .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
+  .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
+  .split .fb{grid-column:1;grid-row:2}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigmsg{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.msg:hover{color:var(--brass-ink)}
+.btn-primary:hover{background:var(--brass-2);border-color:var(--brass-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.btn-line:hover{background:rgba(20,42,66,.06)}
+.card:hover .arrow{background:var(--brass);color:var(--ink)}
+.fb:hover .arrow{background:var(--ink);color:var(--brass)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn:hover{outline:2px solid var(--focus);outline-offset:2px}
+.bigmsg:hover{color:var(--brass)}
+footer a:hover{color:var(--brass)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A Marlton remodeler's site that earns trust through calm order (after lpmr.co.uk): one claim (your South Jersey home, refreshed), how Scott treats your house, and an easy way to message him.
+OWN-WORLD: Off-white paper, slate navy (#23415f) and deep navy (#142a42, faint diagonal lines) bands, warm brass (#e3a83b) as the one accent, from the hardware and trim of a freshly finished room (fills only; #835700 when it has to be text on light). Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who refreshes homes around Marlton, believes Scott has cared for houses like theirs since 1997, sees his work on Facebook, and messages him with their project.
+FIRST VIEWPORT: Paper header with wordmark left and "Message me" top right. Hero over an example refreshed kitchen under deep navy: eyebrow, "Your South Jersey home, refreshed.", one promise line, two pill buttons (Get a quote, See my work).
+FORM: calm-photo band system; no client photos exist, so the hero and the two service cards use generated example photos (listed in HANDOFF), never presented as his jobs.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M12 3C7 3 3 6.7 3 11.3c0 2.6 1.3 4.9 3.3 6.4V21l3-1.7c.9.3 1.8.4 2.7.4 5 0 9-3.7 9-8.4S17 3 12 3z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M7.5 13.2l3-3.2 2.2 2.1 3.8-2.1-3 3.2-2.2-2.1z" fill="currentColor" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Scott J. D'Antonio Inc., back to top"><b>Scott J. D'Antonio</b><span>Inc. · Marlton, NJ</span></a>
+    <a class="msg" data-m href="https://m.me/100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-msg"/></svg>Message me</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <picture>
+    <source media="(min-width:760px)" srcset="img/hero-wide.webp" width="1536" height="1024">
+    <img src="img/hero-tall.webp" width="800" height="915" alt="" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="wrap hero-copy">
+    <span class="eyebrow">Light &amp; cosmetic remodeling</span>
+    <h1 id="h1">Your South Jersey home, <span class="accent">refreshed.</span></h1>
+    <p class="promise">I'm <b>Scott</b>, and I've been making homes around Marlton look their best since 1997.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Get a quote</a>
+      <a class="btn btn-ghost" href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg>See my work</a>
+    </div>
+  </div>
+</section>
+
+<section class="on-paper" id="services" aria-labelledby="h-what">
+  <div class="wrap">
+    <div class="head rise">
+      <h2 id="h-what">Inside and <span class="accent">out.</span></h2>
+      <p class="lede">The rooms you're tired of, and the outside you'd like to be proud of again.</p>
+    </div>
+    <div class="cards">
+      <a class="card rise" href="#ask" data-pick="Interior"><img src="img/bath.webp" width="720" height="900" alt="An example of an updated bathroom: white vanity, grey walls, new trim and tile" loading="lazy" decoding="async"><span class="t">Interior improvements<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a>
+      <a class="card rise" href="#ask" data-pick="Exterior"><img src="img/porch.webp" width="720" height="900" alt="An example of a refreshed front porch: white columns and railings, grey floor boards, navy door" loading="lazy" decoding="async"><span class="t">Exterior improvements<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="on-navy" aria-labelledby="h-trust">
+  <div class="wrap split">
+    <div class="head rise">
+      <span class="eyebrow">Since 1997</span>
+      <h2 id="h-trust">I treat your home <span class="accent">like mine.</span></h2>
+      <p class="lede">You're trusting me with the rooms you live in every day. I keep it tidy while I work, I talk you through it, and I don't leave until it looks right to both of us.</p>
+    </div>
+    <ul class="claims">
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="30" height="27" rx="4"/><path d="M5 16h30M13 4v7M27 4v7"/><path d="M15 26l3.5 3.5L26 22"/></svg>In business since 1997</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L20 6l15 13"/><path d="M9 16v18h22V16"/><path d="M17 34v-9h6v9"/></svg>Inside and outside the house</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 36s12-11.2 12-20a12 12 0 0 0-24 0c0 8.8 12 20 12 20z"/><circle cx="20" cy="16" r="4.5"/></svg>Based in Marlton, NJ</li>
+    </ul>
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener">
+      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>Click to see more of my work.</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Tell me what you'd like changed.</b><span>A few words and a photo are plenty.</span></div></li>
+      <li class="rise"><div><b>I come and see it.</b><span>We walk through it together and I give you a straight price.</span></div></li>
+      <li class="rise"><div><b>I do it like it's my own house.</b><span>Careful work, and I clean up before I go.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <span class="eyebrow">Small jobs welcome</span>
+      <h2 id="h-ask">Tell me about your project</h2>
+      <p class="lede">Not sure it's something I do? Ask anyway.</p>
+    </div>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field">
+        <legend>Where's the work?</legend>
+        <div class="chips">
+          <input type="radio" name="kind" id="k1" value="Interior"><label for="k1">Inside</label>
+          <input type="radio" name="kind" id="k2" value="Exterior"><label for="k2">Outside</label>
+          <input type="radio" name="kind" id="k3" value="Inside and outside"><label for="k3">Both</label>
+        </div>
+      </fieldset>
+      <div class="field" id="f-what">
+        <label for="what">What would you like done?</label>
+        <textarea id="what" name="what" maxlength="600" placeholder="New trim in the living room, a tired bathroom, the front porch…" aria-describedby="e-what"></textarea>
+        <p class="err" id="e-what">Tell me a little about the project.</p>
+      </div>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so I know who's asking.</p>
+      </div>
+      <div class="field">
+        <label for="where">Your town <small>(optional)</small></label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="e.g. Cherry Hill">
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-msg"/></svg>Send this to Scott</button>
+      <p class="after">Your message goes to me on Facebook Messenger.</p>
+      <div class="sent" id="sent" role="status" hidden>
+        <p id="sentMsg">Your message is copied. Open Messenger and paste it in.</p>
+        <textarea id="out" readonly aria-label="Your message"></textarea>
+        <div class="row">
+          <a class="btn btn-primary" id="openM" data-m href="https://m.me/100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-msg"/></svg>Open Messenger</a>
+          <button class="btn btn-line" type="button" id="copy">Copy again</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">Scott J. D'Antonio Inc.</h2>
+      <p class="who">Light &amp; cosmetic remodeling, inside and out, since 1997.</p>
+      <p class="area">Based in <b>Marlton</b>. Also working in Cherry Hill, Moorestown, Mt. Laurel and Voorhees. Somewhere nearby? Ask me.</p>
+    </div>
+    <a class="bigmsg rise" data-m href="https://m.me/100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-msg"/></svg>Message me</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Scott J. D'Antonio Inc. · Marlton, NJ · Light &amp; cosmetic remodeling since 1997</span>
+    <nav aria-label="Contact">
+      <a href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener">Facebook</a>
+      <a data-m href="https://m.me/100095065165107" rel="noopener">Messenger</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="float" id="float" data-m href="https://m.me/100095065165107" rel="noopener" aria-label="Message Scott on Facebook"><svg aria-hidden="true"><use href="#i-msg"/></svg></a>
+
+<script>
+/* ===== Config ===== */
+var CONFIG = {
+  FLOAT: true,                                   // the floating message circle; false removes it
+  MESSENGER: 'https://m.me/100095065165107',     // the business's only published channel
+  GREETING: "Hi Scott, I found your website. I'd like a quote."
+};
+document.documentElement.classList.add('js');
+
+/* ===== Messenger links: pre-fill the greeting where Messenger supports ?text= ===== */
+(function(){
+  var href=CONFIG.MESSENGER+'?text='+encodeURIComponent(CONFIG.GREETING);
+  [].forEach.call(document.querySelectorAll('[data-m]'),function(a){if(a.id!=='openM')a.href=href});
+})();
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Service cards pre-pick the matching chip ===== */
+(function(){
+  [].forEach.call(document.querySelectorAll('[data-pick]'),function(a){
+    a.addEventListener('click',function(){var r=document.querySelector('input[name=kind][value="'+a.getAttribute('data-pick')+'"]');if(r)r.checked=true});
+  });
+})();
+
+/* ===== Quote form: composes a message, copies it, and hands off to Messenger ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  var sent=document.getElementById('sent'),out=document.getElementById('out'),note=document.getElementById('sentMsg'),open=document.getElementById('openM');
+  function val(id){return document.getElementById(id).value.trim()}
+  function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input,textarea').setAttribute('aria-invalid',bad?'true':'false')}
+  function copy(text,done){
+    // the clipboard is often blocked inside Facebook's in-app browser; the message stays on screen either way
+    function fallback(){out.focus();out.select();var ok=false;try{ok=document.execCommand('copy')}catch(e){}done(ok)}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true)},fallback)}else fallback();
+  }
+  function report(ok){note.textContent=ok?'Your message is copied. Open Messenger and paste it in.':'Copy the message below, then open Messenger and paste it in.'}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),what=val('what'),where=val('where'),k=form.querySelector('input[name=kind]:checked');
+    mark('f-what',!what);mark('f-name',!name);
+    if(!what){document.getElementById('what').focus();return}
+    if(!name){document.getElementById('name').focus();return}
+    var msg='Hi Scott, this is '+name+'. I found your website. I\'d like a quote for: '+what.replace(/[.\s]+$/,'');
+    if(!/[!?]$/.test(msg))msg+='.';
+    if(k)msg+=' Where: '+k.value.toLowerCase()+'.';
+    if(where)msg+=' Town: '+where+'.';
+    out.value=msg;
+    open.href=CONFIG.MESSENGER+'?text='+encodeURIComponent(msg);
+    sent.hidden=false;
+    copy(msg,report);
+    sent.scrollIntoView({block:'nearest'});
+  });
+  document.getElementById('copy').addEventListener('click',function(){copy(out.value,report)});
+})();
+
+/* ===== Floating message circle: shows after the hero, hides while the form or the closing band is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false,closeIn=false;
+  function sync(){var on=pastHero&&!formIn&&!closeIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  new IntersectionObserver(function(es){closeIn=es[0].isIntersecting;sync()}).observe(document.getElementById('close'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
