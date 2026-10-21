@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Scott J. D'Antonio Inc. · Light &amp; cosmetic remodeling · Marlton, NJ</title>
-<meta name="description" content="Light and cosmetic remodeling, inside and out, from Scott J. D'Antonio Inc. in Marlton, NJ. Serving Cherry Hill, Moorestown, Mt. Laurel and Voorhees since 1997.">
+<meta name="description" content="Light and cosmetic remodeling, inside and out, from Scott J. D'Antonio Inc. in Marlton, NJ, since 1997.">
 <meta name="theme-color" content="#f4f6fb">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Scott J. D'Antonio Inc. · Your South Jersey home, refreshed.">
@@ -37,7 +37,7 @@
   --on-dark-soft:#c9d5e3;
   --brass:#e3a83b;       /* fills only; text on it is --ink */
   --brass-2:#edbb5c;
-  --brass-ink:#835700;   /* brass as text on light (7.6:1 on paper) */
+  --brass-ink:#835700;   /* brass as text on light (5.8:1 on paper) */
   --line:rgba(20,42,66,.12);
   --focus:#23415f;       /* form hover/focus outline, distinct from the brass fill */
   --error:#b3261e;
@@ -60,6 +60,7 @@ a{color:inherit}
 h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
 h2{font-size:clamp(30px,7.6vw,48px)}
 p{margin:0}
+p,li,.lede{text-wrap:pretty}
 
 /* ---------- Bands ---------- */
 section{padding:64px 0}
@@ -91,7 +92,7 @@ section{padding:64px 0}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
 .brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
 .brand b{font:400 20px/1 var(--display);letter-spacing:.005em;white-space:nowrap}
-.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:6px}
+.brand span{font:600 12px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:6px}
 .msg{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
 .msg svg{width:20px;height:20px;flex:none;color:var(--brass-ink)}
 
@@ -119,7 +120,6 @@ section{padding:64px 0}
 .card:hover,.card:focus-visible{outline:none;box-shadow:none}
 .card .arrow{background:rgba(255,255,255,.18);color:#fff}
 .card:focus-visible .arrow{background:var(--brass);color:var(--ink);outline:3px solid var(--brass);outline-offset:3px}
-.note{margin-top:20px;font-size:15px;color:var(--soft);max-width:52ch}
 .arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(20,42,66,.07);color:var(--ink);transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
 
@@ -160,11 +160,11 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
 .chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
 .chips input:checked+label{background:var(--ink);color:#fff}
-.err{display:none;font-size:15px;color:var(--error)}
+.err{display:none;font-size:16px;color:var(--error)}
 .field.bad .err{display:block}
 form .btn-primary{width:100%}
 form .btn:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.after{font-size:15px;color:var(--soft)}
+.after{font-size:16px;color:var(--soft)}
 /* After submit: the message, copied, and the way into Messenger */
 .sent{display:grid;gap:14px;padding:20px;border-radius:18px;background:var(--paper)}
 .sent p{color:var(--ink);font-weight:600}
@@ -180,7 +180,7 @@ form .btn:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .bigmsg svg{width:.85em;height:.85em;flex:none;color:var(--brass)}
 
 /* ---------- Footer ---------- */
-footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(48px + env(safe-area-inset-bottom));font-size:16px}
 footer .wrap{display:grid;gap:14px}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(244,247,251,.4)}
@@ -193,6 +193,7 @@ html:not(.js) .float{display:none}
 .float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
 
 /* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+html:not(.js) #quoteForm{display:none}
 .js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
 .js .rise.below{opacity:0;transform:translateY(12px)}
 
@@ -233,6 +234,7 @@ html:not(.js) .float{display:none}
 .fb:hover .arrow{background:var(--ink);color:var(--brass)}
 input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
+.chips input:checked+label:hover{outline:2px solid var(--focus);outline-offset:2px}
 form .btn:hover{outline:2px solid var(--focus);outline-offset:2px}
 .bigmsg:hover{color:var(--brass)}
 footer a:hover{color:var(--brass)}
@@ -270,7 +272,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="hero" id="hero" aria-labelledby="h1">
   <picture>
     <source media="(min-width:760px)" srcset="img/hero-wide.webp" width="1536" height="1024">
-    <img src="img/hero-tall.webp" width="800" height="915" alt="" fetchpriority="high" decoding="async">
+    <img src="img/hero-tall.webp" width="800" height="915" alt="" fetchpriority="high">
   </picture>
   <div class="wrap hero-copy">
     <span class="eyebrow">Light &amp; cosmetic remodeling</span>
@@ -278,7 +280,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <p class="promise">I'm <b>Scott</b>, and I've been making homes around Marlton look their best since 1997.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#ask">Get a quote</a>
-      <a class="btn btn-ghost" href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg>See my work</a>
+      <a class="btn btn-ghost" href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg>See me on Facebook</a>
     </div>
   </div>
 </section>
@@ -286,12 +288,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper" id="services" aria-labelledby="h-what">
   <div class="wrap">
     <div class="head rise">
-      <h2 id="h-what">Inside and <span class="accent">out.</span></h2>
+      <h2 id="h-what">Inside and out.</h2>
       <p class="lede">The rooms you're tired of, and the outside you'd like to be proud of again.</p>
     </div>
     <div class="cards">
-      <a class="card rise" href="#ask" data-pick="Interior"><img src="img/bath.webp" width="720" height="900" alt="An example of an updated bathroom: white vanity, grey walls, new trim and tile" loading="lazy" decoding="async"><span class="t">Interior improvements<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a>
-      <a class="card rise" href="#ask" data-pick="Exterior"><img src="img/porch.webp" width="720" height="900" alt="An example of a refreshed front porch: white columns and railings, grey floor boards, navy door" loading="lazy" decoding="async"><span class="t">Exterior improvements<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a>
+      <a class="card rise" href="#ask" data-pick="Inside" aria-label="Interior improvements, tell me about yours"><img src="img/bath.webp" srcset="img/bath.webp 720w, img/bath-900.webp 900w" sizes="(min-width:760px) 428px, calc(100vw - 40px)" width="720" height="900" alt="An example of an updated bathroom: white vanity, grey walls, new trim and tile" loading="lazy" decoding="async"><span class="t">Interior improvements<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a>
+      <a class="card rise" href="#ask" data-pick="Outside" aria-label="Exterior improvements, tell me about yours"><img src="img/porch.webp" srcset="img/porch.webp 720w, img/porch-900.webp 900w" sizes="(min-width:760px) 428px, calc(100vw - 40px)" width="720" height="900" alt="An example of a refreshed front porch: white columns and railings, grey floor boards, navy door" loading="lazy" decoding="async"><span class="t">Exterior improvements<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a>
     </div>
   </div>
 </section>
@@ -299,9 +301,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-navy" aria-labelledby="h-trust">
   <div class="wrap split">
     <div class="head rise">
-      <span class="eyebrow">Since 1997</span>
       <h2 id="h-trust">I treat your home <span class="accent">like mine.</span></h2>
-      <p class="lede">You're trusting me with the rooms you live in every day. I keep it tidy while I work, I talk you through it, and I don't leave until it looks right to both of us.</p>
+      <p class="lede">You're trusting me with the rooms you live in every day. I treat your house the way I'd want someone to treat mine.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="30" height="27" rx="4"/><path d="M5 16h30M13 4v7M27 4v7"/><path d="M15 26l3.5 3.5L26 22"/></svg>In business since 1997</li>
@@ -309,7 +310,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 36s12-11.2 12-20a12 12 0 0 0-24 0c0 8.8 12 20 12 20z"/><circle cx="20" cy="16" r="4.5"/></svg>Based in Marlton, NJ</li>
     </ul>
     <a class="fb rise" href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener">
-      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>Click to see more of my work.</span>
+      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>See my work on Facebook.</span>
       <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
     </a>
   </div>
@@ -319,9 +320,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
     <ol class="steps">
-      <li class="rise"><div><b>Tell me what you'd like changed.</b><span>A few words and a photo are plenty.</span></div></li>
-      <li class="rise"><div><b>I come and see it.</b><span>We walk through it together and I give you a straight price.</span></div></li>
-      <li class="rise"><div><b>I do it like it's my own house.</b><span>Careful work, and I clean up before I go.</span></div></li>
+      <li class="rise"><div><b>Tell me what you'd like changed.</b><span>A few words are plenty. Photos help; you can add them in Messenger.</span></div></li>
+      <li class="rise"><div><b>I come and see it.</b><span>We look at it together and talk it through.</span></div></li>
+      <li class="rise"><div><b>I do it like it's my own house.</b><span>Careful work in a home that's lived in.</span></div></li>
     </ol>
   </div>
 </section>
@@ -337,8 +338,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <fieldset class="field">
         <legend>Where's the work?</legend>
         <div class="chips">
-          <input type="radio" name="kind" id="k1" value="Interior"><label for="k1">Inside</label>
-          <input type="radio" name="kind" id="k2" value="Exterior"><label for="k2">Outside</label>
+          <input type="radio" name="kind" id="k1" value="Inside"><label for="k1">Inside</label>
+          <input type="radio" name="kind" id="k2" value="Outside"><label for="k2">Outside</label>
           <input type="radio" name="kind" id="k3" value="Inside and outside"><label for="k3">Both</label>
         </div>
       </fieldset>
@@ -367,6 +368,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         </div>
       </div>
     </form>
+    <noscript><a class="btn btn-primary" href="https://m.me/100095065165107" rel="noopener">Message me on Messenger</a></noscript>
   </div>
 </section>
 
@@ -374,7 +376,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="rise">
       <h2 id="h-close">Scott J. D'Antonio Inc.</h2>
-      <p class="who">Light &amp; cosmetic remodeling, inside and out, since 1997.</p>
+      <p class="who">Light &amp; cosmetic remodeling, inside and out.</p>
       <p class="area">Based in <b>Marlton</b>. Also working in Cherry Hill, Moorestown, Mt. Laurel and Voorhees. Somewhere nearby? Ask me.</p>
     </div>
     <a class="bigmsg rise" data-m href="https://m.me/100095065165107" rel="noopener"><svg aria-hidden="true"><use href="#i-msg"/></svg>Message me</a>
@@ -387,7 +389,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <span>Scott J. D'Antonio Inc. · Marlton, NJ · Light &amp; cosmetic remodeling since 1997</span>
     <nav aria-label="Contact">
       <a href="https://www.facebook.com/profile.php?id=100095065165107" rel="noopener">Facebook</a>
-      <a data-m href="https://m.me/100095065165107" rel="noopener">Messenger</a>
     </nav>
   </div>
 </footer>
@@ -459,16 +460,19 @@ document.documentElement.classList.add('js');
     mark('f-what',!what);mark('f-name',!name);
     if(!what){document.getElementById('what').focus();return}
     if(!name){document.getElementById('name').focus();return}
-    var msg='Hi Scott, this is '+name+'. I found your website. I\'d like a quote for: '+what.replace(/[.\s]+$/,'');
+    var msg='Hi Scott, this is '+name+'. I found your website. I\'d like a quote for: '+(/^[A-Z][a-z]/.test(what)?what.charAt(0).toLowerCase()+what.slice(1):what).replace(/[.\s]+$/,'');
     if(!/[!?]$/.test(msg))msg+='.';
-    if(k)msg+=' Where: '+k.value.toLowerCase()+'.';
+    if(k)msg+=' The work is '+k.value.toLowerCase()+'.';
     if(where)msg+=' Town: '+where+'.';
     out.value=msg;
+    out.style.height='auto';out.style.height=out.scrollHeight+4+'px';
     open.href=CONFIG.MESSENGER+'?text='+encodeURIComponent(msg);
     sent.hidden=false;
+    form.querySelector('button[type=submit]').hidden=true;
     copy(msg,report);
     sent.scrollIntoView({block:'nearest'});
   });
+  form.addEventListener('input',function(e){if(e.target.id!=='out'&&!sent.hidden){sent.hidden=true;form.querySelector('button[type=submit]').hidden=false}});
   document.getElementById('copy').addEventListener('click',function(){copy(out.value,report)});
 })();
 

@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T09:41:21.832Z",
+        "reason": "Ellie's house style (pitch-site calm-photo-style.md item 2, chosen 2026-10-19): faint 4% diagonal band texture on deep-navy bands"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T09:41:21.893Z",
+        "reason": "Detector counts only fixed UI sizes (11-20px labels/body); display steps are clamp()s at 30-80px (h2 clamp 30-48, h1 clamp 42-80), giving 2.6x+ ratios over body"
+      }
+    ]
+  }
+}
